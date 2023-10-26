@@ -19,7 +19,7 @@ const ioHandler = (req: NextApiRequest, res: NextApiResponseServerIo) => {
       // @ts-ignore
       addTrailingSlash: false,
          cors: {
-  origin: "https://discord-eta-five.vercel.app",
+  origin: "*",
   methods: ["GET", "POST"],
 },
     });
