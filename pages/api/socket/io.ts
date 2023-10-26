@@ -19,8 +19,9 @@ const ioHandler = (req: NextApiRequest, res: NextApiResponseServerIo) => {
       // @ts-ignore
       addTrailingSlash: false,
          cors: {
-        origin: "https://discord-project-ten.vercel.app", // Replace with your frontend's URL
+        origin: "*", // Replace with your frontend's URL
         methods: ["GET", "POST"],
+           
       },
     });
     res.socket.server.io = io;
