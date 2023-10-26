@@ -19,10 +19,9 @@ const ioHandler = (req: NextApiRequest, res: NextApiResponseServerIo) => {
       // @ts-ignore
       addTrailingSlash: false,
          cors: {
-        origin: "*", // Replace with your frontend's URL
-        methods: ["GET", "POST"],
-           
-      },
+  origin: "https://discord-eta-five.vercel.app",
+  methods: ["GET", "POST"],
+},
     });
     res.socket.server.io = io;
   }
